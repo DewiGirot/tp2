@@ -6,13 +6,14 @@ public class Eleve {
     private int[] listeNotes;
     private double moyenne;
 
-    public Eleve(String name, int[] listeNotes, double moyenne) {
+    public Eleve(String name, int[] listeNotes) {
         this.name = name;
         this.listeNotes = listeNotes;
-        this.moyenne = 0;
+        if(this.listeNotes.length == 0){
+            this.moyenne = 10;
+        }
     }
 
-    public void addNote(int note) {
-        
-    }
+
+
 }
