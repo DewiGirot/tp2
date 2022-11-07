@@ -1,3 +1,5 @@
+package Etudiant;
+
 public class Etudiant{
 
   private String nom;
@@ -6,20 +8,20 @@ public class Etudiant{
     this.nom = nom;
   }
 
-  public getNom(){
+  public String getNom() {
     return this.nom;
   }
 
-  public static travailler(){
-    if(getNom() == "Philippe"){
+  public void travailler(){
+    if(getNom().equals("Philippe")){
       System.out.println("Philippe se met au travail !");
     }
   }
 
-  public static seReposer(){
-    if(getNom() == "Philippe"){
+  public void seReposer(){
+    if(getNom().equals("Philippe")){
       System.out.println("Philippe se repose !");
     }
   }
-  
+
 }

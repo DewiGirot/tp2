@@ -1,3 +1,5 @@
+package Ex1;
+
 public class Chien {
 
   private int age;
